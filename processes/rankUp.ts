@@ -14,6 +14,7 @@ export default function rankUp(userId: string, rank?: RankType) {
     prev_lvl_total_exp: 0,
     level: 0,
     exp: 0,
+    last_msg_millis: new Date().getTime(),
   };
 
   let userLeveled = false;

@@ -4,4 +4,5 @@ export type RankType = {
   prev_lvl_total_exp: number;
   level: number;
   exp: number;
+  last_msg_millis: number;
 };
