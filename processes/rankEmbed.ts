@@ -19,10 +19,10 @@ export default function rankEmbed(user: APIUser, rank?: RankType) {
   const expCard = {
     title: `${user.username}'s Rank`,
     color: user.accent_color,
-    author: { name: user.username, iconURL: user.avatar },
+    author: { name: user.username, iconURL: `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` },
     description: `Level ${userRank.level}`,
     thumbnail: {
-      url: user.avatar,
+      url: `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`,
     },
     fields: [
       { name: 'Current Exp:', value: `${userRank.exp - userRank.prev_lvl_total_exp}` },
