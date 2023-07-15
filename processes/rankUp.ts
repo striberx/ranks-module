@@ -1,4 +1,4 @@
-import { RankType } from '../helpers';
+import { DEFAULT_RANK, RankType } from '../helpers';
 
 /**
  * Does rank up and exp addition calculations
@@ -8,14 +8,7 @@ import { RankType } from '../helpers';
  * @returns Object containing the updated rank and if the user leveled up
  */
 export default function rankUp(userId: string, rank?: RankType) {
-  const userRank = rank ?? {
-    user_id: userId,
-    exp_needed: 100,
-    prev_lvl_total_exp: 0,
-    level: 0,
-    exp: 0,
-    last_msg_millis: new Date().getTime(),
-  };
+  const userRank = rank ?? DEFAULT_RANK(userId);
 
   let userLeveled = false;
 
