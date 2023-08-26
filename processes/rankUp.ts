@@ -1,4 +1,4 @@
-import { DEFAULT_RANK, RankType } from '../helpers';
+import { DEFAULT_RANK, type RankType } from '../helpers';
 
 /**
  * Does rank up and exp addition calculations

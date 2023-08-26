@@ -1,5 +1,5 @@
-import { APIUser, APIEmbed } from 'discord-api-types/payloads/v10';
-import { RankType, DEFAULT_RANK } from '../helpers';
+import type { APIUser, APIEmbed } from 'discord-api-types/payloads/v10';
+import { type RankType, DEFAULT_RANK } from '../helpers';
 
 /**
  * Return's the user's rank as an embed
